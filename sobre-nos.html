@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sobre Nós | KingLion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <img src="img/logo.png" alt="Logo KingLion" class="logo" />
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contatos</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="hero-sobre">
+    <div class="conteudo-sobre">
+      <h1>Bem-vindo ao<br>KingLion Móveis de<br>Alto Padrão</h1>
+      <p>Descubra a excelência em design e marcenaria que transforma<br>ambientes com sofisticação e qualidade.</p>
+
+      <div class="cards-sobre">
+        <div class="card">
+          <span class="emoji">🎨</span>
+          <div>
+            <h3>Design Elegante</h3>
+            <p>Criações que combinam estética e<br>funcionalidade com precisão.</p>
+          </div>
+        </div>
+        <div class="card">
+          <span class="emoji">🔨</span>
+          <div>
+            <h3>Execução Perfeita</h3>
+            <p>Compromisso com a perfeição em<br>cada detalhe do projeto.</p>
+          </div>
+        </div>
+        <div class="card">
+          <span class="emoji">😊</span>
+          <div>
+            <h3>Satisfação Garantida</h3>
+            <p>Clientes satisfeitos que confiam na<br>nossa expertise.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="historia">
+  <div class="texto-historia">
+    <p class="subtitulo">Compromisso com a Excelência</p>
+    <h2>Nossa História</h2>
+    <div class="colunas">
+      <p>
+        A história da nossa marcenaria começou em 2011, movida pela paixão por transformar madeira em propósito. Foi naquele ano que demos os primeiros passos com ferramentas simples, espaço modesto e muita vontade de fazer diferente. Desde o início, a ideia sempre foi clara: oferecer soluções de marcenaria sob medida com qualidade, comprometimento e respeito ao cliente.
+
+Ao longo dos anos, enfrentamos desafios, aprendemos com cada projeto e, principalmente, evoluímos. Buscamos constantemente melhorar — não apenas no acabamento, mas em todos os aspectos do nosso trabalho. Estudamos novos materiais, testamos combinações, analisamos fornecedores e investimos em equipamentos modernos. Cada escolha feita ao longo dessa trajetória teve um objetivo: elevar o padrão daquilo que entregamos.
+
+Hoje, com mais de uma década de experiência, nos orgulhamos de ser reconhecidos como referência em marcenaria de alto padrão. Produzimos móveis planejados e personalizados que se destacam pela durabilidade, estética e funcionalidade. Trabalhamos com um rigoroso controle de qualidade e atenção aos mínimos detalhes, garantindo que cada peça entregue seja fruto de um processo criterioso e bem executado.
+      </p>
+      <p>
+       Um dos pilares da nossa evolução foi a entrada no mercado corporativo, que se tornou uma das nossas principais áreas de atuação. Atendemos empresas de diversos segmentos, desenvolvendo e montando estruturas completas de mobiliário para escritórios, salas de reunião, recepções, espaços colaborativos e ambientes de convivência. Entendemos as necessidades específicas desse público e criamos soluções que unem sofisticação, ergonomia e praticidade.
+
+Nosso compromisso vai além da marcenaria. Entregamos projetos completos, com prazos rigorosamente cumpridos, garantia estendida e suporte ao cliente do início ao fim. Valorizamos a relação de confiança com quem nos contrata e sabemos que cada projeto carrega a expectativa de um espaço melhor para viver, trabalhar ou receber.
+
+Mais do que móveis, entregamos experiências. Cada projeto é único. Cada cliente é especial. E cada detalhe importa.
+
+Seguimos construindo nossa história com solidez, paixão e responsabilidade, sempre guiados por três princípios fundamentais: qualidade, confiança e excelência.
+
+Seja bem-vindo à nossa marcenaria. Um espaço onde a madeira ganha alma e os projetos se tornam realidade.
+      </p>
+    </div>
+  </div>
+
+  <div class="imagem-historia">
+    <img src="img/historia.jpg" alt="Imagem da marcenaria">
+  </div>
+</section>
+
+<section class="videos">
+  <div class="videos-header">
+    <h2>Explore a Nossa Visão</h2>
+    <p>Veja de perto o cuidado, a precisão e a elegância por trás de nossos projetos.</p>
+  </div>
+
+  <div class="videos-container">
+    <div class="video-box">
+      <video controls>
+        <source src="video/video1.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+    <div class="video-box">
+      <video controls>
+        <source src="video/video2.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+    <div class="video-box">
+      <video controls>
+        <source src="video/video3.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+    <div class="video-box">
+      <video controls>
+        <source src="video/video4.mp4" type="video/mp4">
+        Seu navegador não suporta vídeo HTML5.
+      </video>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>&copy; 2025 KingLion Móveis Planejados. Todos os direitos reservados.</p>
+  <p>Desenvolvido por: Guilherme Moura</p>
+</footer>
+
+<script>
+  const videos = document.querySelectorAll("video");
+
+  videos.forEach((video) => {
+    video.addEventListener("play", () => {
+      videos.forEach((v) => {
+        if (v !== video) {
+          v.pause();
+        }
+      });
+    });
+  });
+</script>
+<script src="script.js"></script>
+</body>
+</html>

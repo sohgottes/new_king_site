@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria | KingLion</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-contato">
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <img src="img/logo.png" alt="Logo KingLion" class="logo" />
+      <ul>
+        <li><a href="index.html">Página Inicial</a></li>
+        <li><a href="sobre-nos.html">Sobre Nós</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- GALERIA COM MENU LATERAL -->
+  <div class="galeria-container">
+    <aside class="menu-lateral">
+      <h2>Galeria KingLion</h2>
+      <ul>
+        <li><a href="#cozinhas">Cozinhas</a></li>
+        <li><a href="#quartos">Quartos</a></li>
+        <li><a href="#banheiros">Banheiros</a></li>
+        <li><a href="#salas">Salas</a></li>
+        <li><a href="#corporativos">Móveis Corporativos</a></li>
+      </ul>
+    </aside>
+
+    <main class="galeria-conteudo">
+      <!-- COZINHAS -->
+    <section id="cozinhas">
+  <h3>Cozinhas</h3>
+  <div class="grid-imagens">
+    <img src="img/cozinha1.jpg" alt="Cozinha 1">
+    <img src="img/cozinha2.jpg" alt="Cozinha 2">
+    <img src="img/cozinha3.jpg" alt="Cozinha 3">
+    <img src="img/cozinha4.jpg" alt="Cozinha 4">
+    <img src="img/cozinha5.jpg" alt="Cozinha 5">
+    <img src="img/cozinha6.jpg" alt="Cozinha 6">
+    <img src="img/cozinha7.jpg" alt="Cozinha 7">
+    <img src="img/cozinha8.jpg" alt="Cozinha 8">
+    <img src="img/cozinha9.jpg" alt="Cozinha 9">
+    <img src="img/cozinha10.jpg" alt="Cozinha 10">
+    <img src="img/cozinha11.png" alt="Cozinha 11">
+    <img src="img/cozinha12.jpg" alt="Cozinha 12">
+  </div>
+    </section>
+
+
+      <!-- QUARTOS -->
+      <section id="quartos">
+        <h3>Quartos</h3>
+        <div class="grid-imagens">
+          <img src="img/quarto1.jpg" alt="Quarto 1">
+          <img src="img/quarto2.jpg" alt="Quarto 2">
+          <img src="img/quarto3.jpg" alt="Quarto 3">
+          <img src="img/quarto4.jpg" alt="Quarto 4">
+          <img src="img/quarto5.jpg" alt="Quarto 5">
+          <img src="img/quarto6.png" alt="Quarto 6">
+          <img src="img/quarto7.png" alt="Quarto 7">
+          <img src="img/quarto8.jpg" alt="Quarto 8">
+        </div>
+      </section>
+
+      <!-- BANHEIROS -->
+      <section id="banheiros">
+        <h3>Banheiros</h3>
+        <div class="grid-imagens">
+          <img src="img/banheiro1.png" alt="Banheiro 1">
+          <img src="img/banheiro2.png" alt="Banheiro 2">
+          <img src="img/banheiro3.png" alt="Banheiro 3">
+          <img src="img/banheiro4.png" alt="Banheiro 4">
+          <img src="img/banheiro5.png" alt="Banheiro 5">
+          <img src="img/banheiro6.png" alt="Banheiro 6">
+          <img src="img/banheiro7.png" alt="Banheiro 7">
+          <img src="img/banheiro8.png" alt="Banheiro 8">
+        </div>
+      </section>
+
+      <!-- SALAS -->
+      <section id="salas">
+        <h3>Salas</h3>
+        <div class="grid-imagens">
+          <img src="img/sala1.jpg" alt="Sala 1">
+          <img src="img/sala2.png" alt="Sala 2">
+          <img src="img/sala3.png" alt="Sala 3">
+          <img src="img/sala4.png" alt="Sala 4">
+          <img src="img/sala5.png" alt="Sala 5">
+          <img src="img/sala6.png" alt="Sala 6">
+        </div>
+      </section>
+
+      <!-- CORPORATIVOS -->
+      <section id="corporativos">
+        <h3>Móveis Corporativos</h3>
+        <div class="grid-imagens">
+          <img src="img/corporativo1.png" alt="Corporativo 1">
+          <img src="img/corporativo2.png" alt="Corporativo 2">
+          <img src="img/corporativo3.png" alt="Corporativo 3">
+          <img src="img/corporativo4.png" alt="Corporativo 4">
+          <img src="img/corporativo5.jpg" alt="Corporativo 5">
+          <img src="img/corporativo6.jpg" alt="Corporativo 6">
+          <img src="img/corporativo7.jpg" alt="Corporativo 7">
+          <img src="img/corporativo8.jpg" alt="Corporativo 8">
+          <img src="img/corporativo9.jpg" alt="Corporativo 9">
+          <img src="img/corporativo10.jpg" alt="Corporativo 10">
+          <img src="img/corporativo11.jpg" alt="Corporativo 12">
+          <img src="img/corporativo12.png" alt="Corporativo 13">
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    © 2025 KingLion Móveis Planejados. Todos os direitos reservados.
+  </footer>
+
+  <!-- MODAL DE IMAGEM AMPLIADA -->
+  <div class="modal" id="modal">
+    <span class="fechar" onclick="fecharModal()">×</span>
+    <img class="modal-conteudo" id="img-ampliada" />
+  </div>
+
+  <!-- SCRIPT: Exibir Imagem Ampliada -->
+  <script>
+    const imagens = document.querySelectorAll(".grid-imagens img");
+    const modal = document.getElementById("modal");
+    const imgModal = document.getElementById("img-ampliada");
+
+    imagens.forEach(img => {
+      img.addEventListener("click", () => {
+        modal.style.display = "flex";
+        imgModal.src = img.src;
+        imgModal.alt = img.alt;
+      });
+    });
+
+    function fecharModal() {
+      modal.style.display = "none";
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
